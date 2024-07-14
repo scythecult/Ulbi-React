@@ -5,10 +5,11 @@ import { AboutPageAsync } from './pages/AboutPage/AboutPage.async';
 import { MainPageAsync } from './pages/MainPage/MainPage.async';
 import { useTheme } from './hooks/useTheme';
 import { AppRoute } from './constants/routes';
+import cn from 'classnames';
 
 export const App = () => {
   const [theme, setTheme] = useTheme();
-  const className = `app ${theme}`;
+  const className = cn('app', theme);
 
   return (
     <div className={className}>
