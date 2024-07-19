@@ -1,5 +1,5 @@
 import { createContext, PropsWithChildren, useEffect, useState } from 'react';
-import { Theme, THEME_STORAGE_KEY, ThemeValue } from '../constants/common';
+import { Theme, THEME_STORAGE_KEY, ThemeValue } from '../lib/constants/common';
 
 const getDefaultTheme = () => (window.localStorage.getItem(THEME_STORAGE_KEY) as ThemeValue) || Theme.LIGHT;
 const setDefaultTheme = (theme: ThemeValue) => window.localStorage.setItem(THEME_STORAGE_KEY, theme);
