@@ -1,15 +1,21 @@
-import { NavLink } from 'react-router-dom';
+import { AppLink } from '../../../shared';
 import { routes } from '../config';
-import styles from './navigation.module.scss';
+import styles from './Navigation.module.scss';
 import cn from 'classnames';
 
-export const Navigation = () => {
+type NavigationProps = {
+  className?: string;
+};
+
+export const Navigation = ({ className }: NavigationProps) => {
+  const classNameFinal = cn(className, styles.navigation);
+
   return (
-    <nav className={styles.navigation}>
+    <nav className={classNameFinal}>
       {routes.map(({ text, path }) => (
-        <NavLink className={({ isActive }) => cn(styles.navigationLink, { [styles.active]: isActive })} to={path}>
+        <AppLink key={path} to={path}>
           {text}
-        </NavLink>
+        </AppLink>
       ))}
     </nav>
   );

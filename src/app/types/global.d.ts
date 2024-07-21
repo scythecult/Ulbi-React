@@ -1,8 +1,3 @@
-// declare module '*.scss' {
-//   const css: { [key: string]: string };
-//   export default css;
-// }
-
 declare module '*.scss' {
   const content: Record<string, string>;
   export default content;
@@ -11,4 +6,17 @@ declare module '*.scss' {
 declare module '*.css' {
   const content: Record<string, string>;
   export default content;
+}
+
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.png';
+declare module '*.gif';
+declare module '*.woff2';
+declare module '*.woff';
+
+declare module '*.svg' {
+  import React from 'react';
+  const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
+  export default SVG;
 }

@@ -3,10 +3,5 @@
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
   justify-items: center;
   column-gap: 10px;
-}
-
-.navigationLink {
-  &.active {
-    color: #ffffff;
-  }
+  min-width: 200px;
 }

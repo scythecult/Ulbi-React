@@ -1,4 +1,5 @@
 :root {
+  //
   --font-size-m: 16px;
   --font-line-m: 24px;
   --font-size-l: 24px;
@@ -6,4 +7,6 @@
   --font-family-main: 'Consolas', 'Times New Roman', sans-serif;
   --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+  // Metrics
+  --header-min-height: 50px;
 }
