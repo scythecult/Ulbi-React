@@ -2,7 +2,7 @@ import { Route, RouteProps, Routes } from 'react-router-dom';
 import { Suspense } from 'react';
 import { MainPageAsync } from '../../../../pages/mainPage';
 import { AboutPageAsync } from '../../../../pages/aboutPage';
-import { AppRoute, AppRouteKey, AppRoutePath } from '../../../../shared/config/routes';
+import { AppRoute, AppRouteKey, AppRoutePath } from '../../../../shared/config';
 
 export const RouteConfig: Record<AppRouteKey, RouteProps> = {
   [AppRoute.ROOT]: {

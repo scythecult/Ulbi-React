@@ -1,5 +1,5 @@
 import { AppLink } from '../../../shared';
-import { routes } from '../config';
+import { routes } from '../config/config';
 import styles from './Navigation.module.scss';
 import cn from 'classnames';
 
