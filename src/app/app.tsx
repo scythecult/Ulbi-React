@@ -3,8 +3,8 @@ import cn from 'classnames';
 import { Header } from '../widgets/header';
 import { Navigation } from '../widgets/nav';
 import { AppRouter } from './router/appRouter';
-import { ThemeSwitcher } from '../widgets/themeSwitcher';
 import { useTheme } from './providers/themeProvider';
+import { Sidebar } from '../widgets/sidebar';
 
 export const App = () => {
   const [theme] = useTheme();
@@ -13,9 +13,9 @@ export const App = () => {
   return (
     <div className={classNameFinal}>
       <Header>
-        <ThemeSwitcher>Toggle</ThemeSwitcher>
         <Navigation />
       </Header>
+      <Sidebar />
       <AppRouter />
     </div>
   );
