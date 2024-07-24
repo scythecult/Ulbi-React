@@ -1,0 +1,9 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--header-min-height);
+  padding: 16px 24px;
+  background-color: var(--inverted-bg-color);
+}

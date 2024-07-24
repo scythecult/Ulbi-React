@@ -1,0 +1,32 @@
+.sidebar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+  width: var(--sidebar-width);
+  min-height: 100dvh;
+  padding: 12px;
+  background-color: var(--inverted-bg-color);
+  transform: translateX(0);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.collapsed {
+  transform: translateX(calc(var(--sidebar-width) / 2 * -1));
+
+  .switchers {
+    justify-self: end;
+  }
+}
+
+.sidebarToggle {
+  position: absolute;
+  top: 0;
+  left: var(--sidebar-width);
+}
+
+.switchers {
+  align-self: end;
+  justify-self: start;
+}

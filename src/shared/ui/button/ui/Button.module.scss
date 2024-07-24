@@ -1,0 +1,22 @@
+.button {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44px, max-content));
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  margin: 0;
+  padding: 6px 8px;
+  gap: 6px;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    justify-self: end;
+  }
+}
+
+.clear {
+  padding: 0;
+}
