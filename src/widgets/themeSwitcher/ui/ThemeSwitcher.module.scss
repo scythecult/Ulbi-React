@@ -1,0 +1,11 @@
+.heading {
+  grid-area: var(--grid-layout-heading);
+}
+
+.content {
+  grid-area: var(--grid-layout-content);
+}
+
+.switcher {
+  grid-area: var(--grid-layout-switcher);
+}

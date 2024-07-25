@@ -1,3 +1,9 @@
-const AboutPage = () => <div>Some info</div>;
+import { useTranslation } from 'react-i18next';
+
+const AboutPage = () => {
+  const { t } = useTranslation();
+
+  return <div>{t('page.about.heading')}</div>;
+};
 
 export default AboutPage;

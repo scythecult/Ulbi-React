@@ -1,6 +1,6 @@
 import { AppRoutePath } from '../../../shared/config';
 
 export const routes = [
-  { text: 'Main', path: AppRoutePath.ROOT },
-  { text: 'About', path: AppRoutePath.ABOUT },
+  { text: 'main', path: AppRoutePath.ROOT },
+  { text: 'about', path: AppRoutePath.ABOUT },
 ];

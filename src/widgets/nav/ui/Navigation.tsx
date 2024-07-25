@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { AppLink } from '../../../shared';
 import { routes } from '../config/config';
 import styles from './Navigation.module.scss';
@@ -8,13 +9,14 @@ type NavigationProps = {
 };
 
 export const Navigation = ({ className }: NavigationProps) => {
+  const { t } = useTranslation();
   const classNameFinal = cn(className, styles.navigation);
 
   return (
     <nav className={classNameFinal}>
       {routes.map(({ text, path }) => (
         <AppLink key={path} to={path}>
-          {text}
+          {t(`routes.${text}`)}
         </AppLink>
       ))}
     </nav>
