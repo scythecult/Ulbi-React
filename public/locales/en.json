@@ -1,0 +1,22 @@
+{
+  "heading": {
+    "title": "Test text"
+  },
+  "routes": {
+    "main": "Main",
+    "about": "About"
+  },
+  "page": {
+    "lang": "En",
+    "common": {
+      "sidebar-button-expand": "Expand",
+      "sidebar-button-collapse": "Collapse"
+    },
+    "main": {
+      "heading": "Info stub main"
+    },
+    "about": {
+      "heading": "Info stub about"
+    }
+  }
+}

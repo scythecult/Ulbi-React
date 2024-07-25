@@ -1,0 +1,22 @@
+{
+  "heading": {
+    "title": "Тестовый текст"
+  },
+  "routes": {
+    "main": "Главная",
+    "about": "О сайте"
+  },
+  "page": {
+    "lang": "Ру",
+    "common": {
+      "sidebar-button-expand": "Развернуть",
+      "sidebar-button-collapse": "Свернуть"
+    },
+    "main": {
+      "heading": "Информационная заглушка главная"
+    },
+    "about": {
+      "heading": "Инфа о нас"
+    }
+  }
+}
