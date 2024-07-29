@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-order-htmlacademy",
+    "stylelint-config-standard-scss"
+  ],
+  "rules": {
+    "color-hex-length": "long",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "selector-class-pattern": null
+  }
+}

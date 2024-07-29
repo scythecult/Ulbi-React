@@ -7,9 +7,14 @@
   padding: 12px;
   background-color: var(--inverted-bg-color);
   transform: translateX(0);
-  transition-property: transform;
-  transition-duration: 0.2s;
   transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  transition-property: transform;
+}
+
+.switchers {
+  align-self: end;
+  justify-self: start;
 }
 
 .collapsed {
@@ -24,9 +29,4 @@
   position: absolute;
   top: 0;
   left: var(--sidebar-width);
-}
-
-.switchers {
-  align-self: end;
-  justify-self: start;
 }
