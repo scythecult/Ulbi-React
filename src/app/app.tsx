@@ -1,11 +1,11 @@
-import './styles/index.scss';
-import cn from 'classnames';
+import { AppRouter } from './router/appRouter';
 import { Header } from '../widgets/header';
 import { Navigation } from '../widgets/nav';
-import { AppRouter } from './router/appRouter';
-import { useTheme } from './providers/themeProvider';
 import { Sidebar } from '../widgets/sidebar';
 import { Suspense } from 'react';
+import cn from 'classnames';
+import { useTheme } from './providers/themeProvider';
+import './styles/index.scss';
 
 export const App = () => {
   const [theme] = useTheme();

@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react';
-import { NavLink, LinkProps } from 'react-router-dom';
-import styles from './AppLink.module.scss';
 import cn from 'classnames';
+import styles from './AppLink.module.scss';
+import { LinkProps, NavLink } from 'react-router-dom';
 
 const AppLinkTheme = {
   PRIMARY: 'primary',

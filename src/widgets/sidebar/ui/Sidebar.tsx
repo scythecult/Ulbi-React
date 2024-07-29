@@ -1,9 +1,9 @@
+import { LangSwitcher } from '../../langSwitcher';
+import { ThemeSwitcher } from '../../themeSwitcher';
 import cn from 'classnames';
 import styles from './Sidebar.module.scss';
-import { PropsWithChildren, useState } from 'react';
-import { ThemeSwitcher } from '../../themeSwitcher';
-import { LangSwitcher } from '../../langSwitcher';
 import { useTranslation } from 'react-i18next';
+import { PropsWithChildren, useState } from 'react';
 
 type SidebarProps = PropsWithChildren<{
   className?: string;

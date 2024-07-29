@@ -1,2 +1,2 @@
 export { AppLink } from './appLink/ui/AppLink';
-export { Button } from './button/ui/Button';
+export { AppButton } from './appButton/ui/AppButton';
