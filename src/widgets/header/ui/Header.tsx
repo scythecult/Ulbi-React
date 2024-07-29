@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
-import styles from './Header.module.scss';
 import cn from 'classnames';
+import styles from './Header.module.scss';
 
 type HeaderProps = PropsWithChildren<{ className?: string }>;
 

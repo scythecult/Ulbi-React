@@ -1,5 +1,5 @@
-import { createContext, PropsWithChildren, useState } from 'react';
-import { Theme, THEME_STORAGE_KEY, ThemeValue } from '../lib/constants/common';
+import { PropsWithChildren, createContext, useState } from 'react';
+import { THEME_STORAGE_KEY, Theme, ThemeValue } from '../lib/constants/common';
 
 const getDefaultTheme = () => (window.localStorage.getItem(THEME_STORAGE_KEY) as ThemeValue) || Theme.LIGHT;
 const setDefaultTheme = (theme: ThemeValue) => window.localStorage.setItem(THEME_STORAGE_KEY, theme);
@@ -7,7 +7,7 @@ const setDefaultTheme = (theme: ThemeValue) => window.localStorage.setItem(THEME
 export const ThemeContext = createContext<ThemeValue>(getDefaultTheme());
 export const ThemeSetterContext = createContext<() => void>(null);
 
-export type ThemeProviderProps = PropsWithChildren<{}>;
+export type ThemeProviderProps = PropsWithChildren<object>;
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<ThemeValue>(getDefaultTheme());
