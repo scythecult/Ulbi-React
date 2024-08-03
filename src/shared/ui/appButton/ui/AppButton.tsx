@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import styles from './AppButton.module.scss';
+import styles from './AppButton.module.css';
 import { ButtonHTMLAttributes, PropsWithChildren } from 'react';
 
 const AppButtonVariant = {
@@ -7,7 +7,7 @@ const AppButtonVariant = {
 } as const;
 
 type AppButtonVariantKey = keyof typeof AppButtonVariant;
-type AppButtonVariantValue = typeof AppButtonVariant[AppButtonVariantKey];
+type AppButtonVariantValue = (typeof AppButtonVariant)[AppButtonVariantKey];
 
 type AppButtonProps = PropsWithChildren<
   ButtonHTMLAttributes<HTMLButtonElement> & {

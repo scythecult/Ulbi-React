@@ -1,7 +1,7 @@
 import { AppLink } from '../../../shared';
 import cn from 'classnames';
 import { routes } from '../config/config';
-import styles from './Navigation.module.scss';
+import styles from './Navigation.module.css';
 import { useTranslation } from 'react-i18next';
 
 type NavigationProps = {
