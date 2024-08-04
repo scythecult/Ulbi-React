@@ -24,7 +24,7 @@ export const buildLoaders = ({ isDev }: BuildOptions): webpack.RuleSetRule[] => 
   };
 
   const cssLoader = {
-    test: /\.s[ac]ss$/i,
+    test: /\.css$/i,
     use: [
       // Creates `style` nodes from JS strings
       isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
@@ -38,8 +38,6 @@ export const buildLoaders = ({ isDev }: BuildOptions): webpack.RuleSetRule[] => 
           },
         },
       },
-      // Compiles Sass to CSS
-      'sass-loader',
     ],
   };
 

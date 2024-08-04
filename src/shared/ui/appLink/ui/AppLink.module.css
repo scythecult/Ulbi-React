@@ -1,7 +1,5 @@
-.appLink {
-  &.active {
-    color: #ffffff;
-  }
+.appLink.active {
+  color: #ffffff;
 }
 
 .primary {

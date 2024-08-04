@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
 import cn from 'classnames';
-import styles from './AppLink.module.scss';
+import styles from './AppLink.module.css';
 import { LinkProps, NavLink } from 'react-router-dom';
 
 const AppLinkTheme = {
@@ -9,7 +9,7 @@ const AppLinkTheme = {
 } as const;
 
 type AppLinkThemeKey = keyof typeof AppLinkTheme;
-type AppLinkThemeValue = typeof AppLinkTheme[AppLinkThemeKey];
+type AppLinkThemeValue = (typeof AppLinkTheme)[AppLinkThemeKey];
 
 type AppLinkProps = PropsWithChildren<
   {
@@ -23,8 +23,7 @@ export const AppLink = ({ to, className, theme = AppLinkTheme.PRIMARY, children,
     <NavLink
       className={({ isActive }) => cn(className, styles.appLink, styles[theme], { [styles.active]: isActive })}
       to={to}
-      {...restProps}
-    >
+      {...restProps}>
       {children}
     </NavLink>
   );

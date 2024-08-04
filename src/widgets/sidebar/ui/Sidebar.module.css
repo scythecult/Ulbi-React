@@ -19,10 +19,10 @@
 
 .collapsed {
   transform: translateX(calc(var(--sidebar-width) / 2 * -1));
+}
 
-  .switchers {
-    justify-self: end;
-  }
+.collapsed .switchers {
+  justify-self: end;
 }
 
 .sidebarToggle {

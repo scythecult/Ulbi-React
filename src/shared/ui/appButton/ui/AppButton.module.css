@@ -11,10 +11,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
 
-  svg {
-    justify-self: end;
-  }
+.appButton svg {
+  justify-self: end;
 }
 
 .clear {

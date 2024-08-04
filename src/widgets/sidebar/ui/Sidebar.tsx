@@ -1,7 +1,7 @@
 import { LangSwitcher } from '../../langSwitcher';
 import { ThemeSwitcher } from '../../themeSwitcher';
 import cn from 'classnames';
-import styles from './Sidebar.module.scss';
+import styles from './Sidebar.module.css';
 import { useTranslation } from 'react-i18next';
 import { PropsWithChildren, useState } from 'react';
 

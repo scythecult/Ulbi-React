@@ -5,7 +5,7 @@ import { Sidebar } from '../widgets/sidebar';
 import { Suspense } from 'react';
 import cn from 'classnames';
 import { useTheme } from './providers/themeProvider';
-import './styles/index.scss';
+import './styles/index.css';
 
 export const App = () => {
   const [theme] = useTheme();
