@@ -1,6 +1,7 @@
 import { AppRouter } from './router/appRouter';
 import { Header } from '../widgets/header';
 import { Navigation } from '../widgets/nav';
+import { PageLoader } from '../widgets/pageLoader';
 import { Sidebar } from '../widgets/sidebar';
 import { Suspense } from 'react';
 import cn from 'classnames';
@@ -12,7 +13,7 @@ export const App = () => {
   const classNameFinal = cn('app', theme);
 
   return (
-    <Suspense fallback="...Loading">
+    <Suspense fallback={<PageLoader />}>
       <div className={classNameFinal}>
         <Header>{<Navigation />}</Header>
         <Sidebar />
