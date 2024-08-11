@@ -1,5 +1,6 @@
 import { AboutPageAsync } from '../../../../pages/aboutPage';
 import { MainPageAsync } from '../../../../pages/mainPage';
+import { NotFoundPageAsync } from '../../../../pages/notFoundPage';
 import { Suspense } from 'react';
 import { AppRoute, AppRouteKey, AppRoutePath } from '../../../../shared/config';
 import { Route, RouteProps, Routes } from 'react-router-dom';
@@ -12,6 +13,10 @@ export const RouteConfig: Record<AppRouteKey, RouteProps> = {
   [AppRoute.ABOUT]: {
     path: AppRoutePath[AppRoute.ABOUT],
     element: <AboutPageAsync />,
+  },
+  [AppRoute.NOT_FOUND]: {
+    path: AppRoutePath[AppRoute.NOT_FOUND],
+    element: <NotFoundPageAsync />,
   },
 };
 

@@ -14,11 +14,11 @@ export const App = () => {
   return (
     <Suspense fallback="...Loading">
       <div className={classNameFinal}>
-        <Header>
-          <Navigation />
-        </Header>
+        <Header>{<Navigation />}</Header>
         <Sidebar />
-        <AppRouter />
+        <div className="content">
+          <AppRouter />
+        </div>
       </div>
     </Suspense>
   );

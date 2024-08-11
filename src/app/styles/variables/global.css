@@ -8,7 +8,7 @@
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
   --header-min-height: 50px;
   --sidebar-width: 240px;
-  --sidebar-width-collapsed: 80px;
+  --sidebar-width-collapsed: 60px;
   --grid-layout-heading: 'heading';
   --grid-layout-content: 'content';
   --grid-layout-switcher: 'switcher';

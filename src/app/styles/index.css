@@ -10,8 +10,12 @@
 }
 
 .app {
-  min-height: 100dvh;
+  min-height: calc(100dvh + var(--header-min-height));
   font: var(--font-m);
   color: var(--primary-color);
   background-color: var(--bg-color);
+}
+
+.content {
+  margin-left: var(--sidebar-width);
 }

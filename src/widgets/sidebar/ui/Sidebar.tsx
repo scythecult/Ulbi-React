@@ -1,3 +1,4 @@
+import { AppButton } from '../../../shared/ui';
 import { LangSwitcher } from '../../langSwitcher';
 import { ThemeSwitcher } from '../../themeSwitcher';
 import cn from 'classnames';
@@ -27,9 +28,9 @@ export const Sidebar = ({ className }: SidebarProps) => {
         <ThemeSwitcher />
         <LangSwitcher />
       </div>
-      <button className={styles.sidebarToggle} onClick={handleCollapseButtonClick}>
+      <AppButton className={styles.sidebarToggle} onClick={handleCollapseButtonClick}>
         {collapseButtonText}
-      </button>
+      </AppButton>
     </div>
   );
 };
