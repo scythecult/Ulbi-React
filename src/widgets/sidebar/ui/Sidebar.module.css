@@ -1,10 +1,13 @@
 .sidebar {
-  position: relative;
+  position: absolute;
+  top: var(--header-min-height);
+  left: 0;
   display: grid;
   grid-template-columns: 100%;
   width: var(--sidebar-width);
   min-height: 100dvh;
   padding: 12px;
+  padding-top: 32px;
   background-color: var(--inverted-bg-color);
   transform: translateX(0);
   transition-timing-function: ease-out;
@@ -18,7 +21,13 @@
 }
 
 .collapsed {
-  transform: translateX(calc(var(--sidebar-width) / 2 * -1));
+  transform: translateX(calc((var(--sidebar-width) - var(--sidebar-width-collapsed)) * -1));
+}
+
+.collapsed .header,
+.collapsed .content {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .collapsed .switchers {
@@ -28,5 +37,9 @@
 .sidebarToggle {
   position: absolute;
   top: 0;
-  left: var(--sidebar-width);
+  right: 0;
+  padding: 6px;
+  color: #ffffff;
+  background-color: var(--bg-color);
+  border: none;
 }

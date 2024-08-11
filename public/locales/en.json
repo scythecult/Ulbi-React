@@ -17,6 +17,10 @@
     },
     "about": {
       "heading": "Info stub about"
+    },
+    "not-found": {
+      "heading": "Page not found",
+      "back": "To Main"
     }
   }
 }

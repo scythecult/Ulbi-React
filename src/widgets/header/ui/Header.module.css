@@ -4,6 +4,6 @@
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
   min-height: var(--header-min-height);
-  padding: 16px 24px;
+  padding: 12px 24px;
   background-color: var(--inverted-bg-color);
 }
